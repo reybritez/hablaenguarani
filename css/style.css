@@ -90,8 +90,8 @@ button:focus {
   background: #002347; }
 
 .tamanio {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 30%;
   margin-left: -5%;
 }
 /*---------------------------------------------------- */
@@ -3011,7 +3011,7 @@ h6 {
     position: absolute; }
 
   .header_area .navbar {
-    background: #868686; }
+    background: #EBE5E9; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
