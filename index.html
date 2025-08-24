@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hablá en Guarani - Conecta y Aprende</title>
-    <meta name="description" content="Hablá en Guaraní es una plataforma que conecta a estudiantes y profesores de la lengua guaraní. Con nosotros, vas a encontrar al compañero que necesitas para mejorar tu forma de conectar en guaraní.">
+    <meta name="description" content="Hablá en Guaraní es una plataforma que conecta a estudiantes interesados en aprender el idioma y a profesores capacitados para enseñar correctamente  el dulce idioma guaraní. Encuentre a su compañero ideal y diviértete aprendiendo con nosotros.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -61,13 +61,19 @@
         }
         
         .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-logo {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .navbar-logo {
+            transform: scale(1.05);
         }
         
         .nav-links {
@@ -125,6 +131,23 @@
             padding: 8rem 0 4rem;
             text-align: center;
             position: relative;
+        }
+        
+        .hero-logo {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .hero-logo-img {
+            height: 120px;
+            width: auto;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .hero-logo-img:hover {
+            transform: scale(1.05);
         }
         
         .hero h1 {
@@ -225,6 +248,23 @@
             margin-right: auto;
         }
         
+        /* Section logos */
+        .section-logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .section-logo-img {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .section-logo-img:hover {
+            transform: scale(1.05);
+        }
+        
         /* Cards */
         .card-grid {
             display: grid;
@@ -281,6 +321,169 @@
         
         .card p {
             color: #cbd5e1;
+        }
+        
+        /* Community Section */
+        .community-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .community-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .community-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .community-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #3b82f6;
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+        
+        .community-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        
+        .community-card p {
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .community-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .community-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 0.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .community-link:hover {
+            background: rgba(59, 130, 246, 0.2);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-2px);
+        }
+        
+        .community-link.whatsapp {
+            background: rgba(34, 197, 94, 0.1);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+        
+        .community-link.whatsapp:hover {
+            background: rgba(34, 197, 94, 0.2);
+            border-color: rgba(34, 197, 94, 0.5);
+        }
+        
+        .community-link.discord {
+            background: rgba(139, 92, 246, 0.1);
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+        
+        .community-link.discord:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: rgba(139, 92, 246, 0.5);
+        }
+        
+        .community-link.gmusic {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+        
+        .community-link.gmusic:hover {
+            background: rgba(245, 158, 11, 0.2);
+            border-color: rgba(245, 158, 11, 0.5);
+        }
+        
+        .link-icon {
+            font-size: 1.25rem;
+        }
+        
+        .link-text {
+            font-weight: 500;
+        }
+        
+        .community-features {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #cbd5e1;
+        }
+        
+        .gmusic-info {
+            margin-top: 1.5rem;
+        }
+        
+        .gmusic-description {
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .community-cta {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 1rem;
+        }
+        
+        .community-cta p {
+            font-size: 1.25rem;
+            color: #ffffff;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+        
+        .community-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-purple {
+            background: #8b5cf6;
+            color: white;
+        }
+        
+        .btn-purple:hover {
+            background: #7c3aed;
+            transform: translateY(-2px);
         }
         
         /* Teachers Section */
@@ -472,12 +675,35 @@
         /* Footer */
         .footer {
             background: linear-gradient(135deg, #0f172a, #1e293b);
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .footer-logo {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo-img {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-logo-img:hover {
+            transform: scale(1.05);
         }
         
         .footer p {
             color: #9ca3af;
+            margin: 0;
         }
         
         /* Responsive */
@@ -495,8 +721,17 @@
                 grid-template-columns: 1fr;
             }
             
+            .community-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .testimonials-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .community-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
         
@@ -531,11 +766,14 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="#" class="navbar-brand">Habla en Guaraní</a>
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" alt="Hablá en Guarani" class="navbar-logo">
+                </a>
                 <div class="nav-links">
                     <a href="#how-it-works" class="nav-link">Cómo Funciona</a>
                     <a href="#teachers" class="nav-link">Para Profesores</a>
                     <a href="#benefits" class="nav-link">Beneficios</a>
+                    <a href="#community" class="nav-link">Comunidad</a>
                     <a href="#testimonials" class="nav-link">Testimonios</a>
                     <a href="#faq" class="nav-link">FAQ</a>
                     <a href="https://forms.gle/aCc4XPjcUzU3LgnG9" class="btn btn-red">Quiero aprender</a>
@@ -548,6 +786,9 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
+            <div class="hero-logo">
+                <img src="img/logo.png" alt="Hablá en Guarani" class="hero-logo-img">
+            </div>
             <h1>
                 Encuentra tu compañero de 
                 <span class="gradient-text">Guaraní</span>
@@ -672,6 +913,9 @@
     <!-- Benefits Section -->
     <section id="benefits" class="section">
         <div class="container">
+            <div class="section-logo">
+                <img src="img/logo.png" alt="Hablá en Guarani" class="section-logo-img">
+            </div>
             <h2 class="section-title">Beneficios de Hablá en Guarani</h2>
             <p class="section-subtitle">Descubre por qué somos la mejor opción para aprender y enseñar Guaraní</p>
             
@@ -710,6 +954,98 @@
                     <div class="feature-icon">🤝</div>
                     <h3>Comunidad Activa</h3>
                     <p>Únete a una red de personas apasionadas por preservar y compartir la cultura Guaraní.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Community Section -->
+    <section id="community" class="section">
+        <div class="container">
+            <div class="section-logo">
+                <img src="img/logo.png" alt="Hablá en Guarani" class="section-logo-img">
+            </div>
+            <h2 class="section-title">Comunidad Activa</h2>
+            <p class="section-subtitle">Únete a una red de personas apasionadas por preservar y compartir la cultura Guaraní</p>
+            
+            <div class="community-grid">
+                <div class="community-card fade-in">
+                    <div class="community-icon">💬</div>
+                    <h3>Canales de Comunicación</h3>
+                    <p>Conecta con otros miembros de la comunidad a través de nuestros canales oficiales.</p>
+                    
+                    <div class="community-links">
+                        <a href="https://chat.whatsapp.com/IsvlHuQ4YsGF2USvxWhUqY?mode=ems_copy_t" class="community-link whatsapp">
+                            <span class="link-icon">📱</span>
+                            <span class="link-text">Canal de WhatsApp</span>
+                        </a>
+                        <a href="https://discord.gg/gmcZvhvG" class="community-link discord">
+                            <span class="link-icon">🎮</span>
+                            <span class="link-text">Servidor de Discord</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="community-card fade-in">
+                    <div class="community-icon">🎧</div>
+                    <h3>Actividades Semanales</h3>
+                    <p>Participa en nuestra programación semanal de actividades gratuitas desde tu celular.</p>
+                    
+                    <div class="community-features">
+                        <div class="feature-item">
+                            <span class="feature-icon-small">🎙️</span>
+                            <span>Canales de voz activos</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon-small">📅</span>
+                            <span>Programación semanal</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon-small">📱</span>
+                            <span>Acceso desde móvil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="community-card fade-in">
+                    <div class="community-icon">🎵</div>
+                    <h3>Gmusic - Tu dosis diaria</h3>
+                    <p>Descubre música Guaraní recomendada diariamente para potenciar tu aprendizaje a través del oído.</p>
+                    
+                    <div class="gmusic-info">
+                        <p class="gmusic-description">Una plataforma que te recomienda música Guaraní del día para mejorar tu comprensión auditiva y lectura del idioma original.</p>
+                        
+                        <div class="community-features">
+                            <div class="feature-item">
+                                <span class="feature-icon-small">🎯</span>
+                                <span>Recomendaciones diarias</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon-small">📖</span>
+                                <span>Sincronización de letras</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon-small">🤝</span>
+                                <span>Comunidad colaborativa</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://gmusic-tan.vercel.app/" class="community-link gmusic">
+                            <span class="link-icon">🎵</span>
+                            <span class="link-text">Explorar Gmusic</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="community-cta">
+                <p>¿Listo para ser parte de nuestra comunidad?</p>
+                <div class="community-buttons">
+                    <a href="https://chat.whatsapp.com/IsvlHuQ4YsGF2USvxWhUqY?mode=ems_copy_t" class="btn btn-blue">Unirse a WhatsApp</a>
+                    <a href="https://discord.gg/gmcZvhvG" class="btn btn-purple">Unirse a Discord</a>
                 </div>
             </div>
         </div>
@@ -772,11 +1108,6 @@
                     <p>¡Absolutamente! Nuestra plataforma está disponible globalmente, conectando hablantes de todo el mundo.</p>
                 </div>
                 
-                <div class="card fade-in">
-                    <div class="feature-icon">📚</div>
-                    <h3>¿Qué nivel necesito para empezar?</h3>
-                    <p>¡Todos los niveles son bienvenidos! Desde principiantes absolutos hasta hablantes avanzados.</p>
-                </div>
                 
                 <div class="card fade-in">
                     <div class="feature-icon">⏰</div>
@@ -802,7 +1133,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Hablá en Guarani. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Hablá en Guarani" class="footer-logo-img">
+                </div>
+                <p>&copy; 2025 Hablá en Guarani. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
